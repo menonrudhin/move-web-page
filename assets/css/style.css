@@ -310,9 +310,7 @@ img { max-width: 100%; }
 /***** Call to action *****/
 
 .call-to-action-container .section-bottom-button {
-	padding-top: 30px;
-	background-color: #aaa;
-	height : 30%;
+	padding-top: 30%;		
 }
 
 /***** Portfolio *****/
