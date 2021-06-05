@@ -311,8 +311,9 @@ img { max-width: 100%; }
 
 .call-to-action-container .section-bottom-button {
 	padding-top: 30px;
+	background-color: #aaa;
+	height : 30%;
 }
-
 
 /***** Portfolio *****/
 
