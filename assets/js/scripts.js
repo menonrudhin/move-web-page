@@ -50,6 +50,14 @@ jQuery(document).ready(function() {
         Wow
     */
     new WOW().init();
+
+	// Form submit handler
+	$( ".register-info" ).submit(function( event ) {
+		//alert( "Handler for .submit() called." );
+		event.preventDefault();
+		let email = $('.form-control')[0].value;
+		console.log(email);
+	});
 	
 });
 
