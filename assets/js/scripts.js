@@ -4,7 +4,8 @@ function scroll_to(clicked_link, nav_height) {
 	var scroll_to = 0;
 	if(element_class != '.top-content') {
 		element_class += '-container';
-		scroll_to = $(element_class).offset().top - nav_height;
+		var offset = $(element_class).offset();
+		scroll_to = $(element_class).offset().top;
 	}
 	if($(window).scrollTop() != scroll_to) {
 		$('html, body').stop().animate({scrollTop: scroll_to}, 1000);
@@ -18,8 +19,9 @@ jQuery(document).ready(function() {
 	    Navigation
 	*/
 	$('a.scroll-link').on('click', function(e) {
+		console.log('scroll to ',this);
 		e.preventDefault();
-		scroll_to($(this), $('nav').outerHeight());
+		scroll_to($(this), $('.top-content').outerHeight());
 	});
 	// toggle "navbar-no-bg" class
 	$('.top-content .text').waypoint(function() {
