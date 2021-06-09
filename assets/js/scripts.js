@@ -55,8 +55,13 @@ jQuery(document).ready(function() {
 	$( ".register-info" ).submit(function( event ) {
 		//alert( "Handler for .submit() called." );
 		event.preventDefault();
-		let email = $('.form-control')[0].value;
-		console.log(email);
+		let fullName = $('#full-name').val();
+		let emailId = $('#email-id').val();
+		let phoneNo = $('#phone-number').val();
+		let course = $('#course-selected').val();
+		console.log(fullName,' , ',emailId,' , ',phoneNo,' , ',course);
+		let message = 'Your ' + phoneNo + ' order of ' + course + ' has shipped and should be delivered on ' + emailId + '. Details : ' + fullName;
+		sendWhatsappMsg(message);
 	});
 	
 });
