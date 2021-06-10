@@ -1,7 +1,7 @@
 function sendWhatsappMsg(message) {
     console.log('called sendWhatsappMsg')
     const sid = 'AC9c8ddeeab8067bae8de729a30b0ce273';
-    const key = 'fb4c46a4145103cd6e3ff4f94742fd67';
+    const key = '8d905f02bdacc84ca5428dc7176bd756';
     const from_number = 'From=whatsapp:+14155238886';
     const to_number = 'To=whatsapp:+14372464771';
     //let message = 'Body=Hi from Move';
