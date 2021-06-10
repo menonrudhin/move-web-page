@@ -87,7 +87,7 @@
 							<div class="col-md-8">
 								<h3>Hip-Hop</h3>
 								<p>Short Video Here</p>
-								<a class="btn btn-primary scroll-link-and-select" href="#about-us">Book Now</a>
+								<a class="btn btn-primary scroll-link-and-select" id="Hip-Hop" href="#about-us">Book Now</a>
 							</div>
 						</div>
 					</div>
@@ -101,7 +101,7 @@
 							<div class="col-md-8">
 								<h3>Contemporary</h3>
 								<p>Short Video Here</p>
-								<a class="btn btn-primary scroll-link" href="#about-us">Book Now</a>
+								<a class="btn btn-primary scroll-link-and-select" id="Contemporary" href="#about-us">Book Now</a>
 							</div>
 						</div>
 					</div>
@@ -113,13 +113,18 @@
 	<!-- Register Form -->
 	<div class="about-us-container section-container section-container-gray-bg">
 		<div class="container">
-			<div class="row">
-				<div class="col-12 col-lg-7 about-us-box wow fadeInLeft">
+			<div class="row d-flex justify-content-center">
+				<div class="col-6 col-lg-6 about-us-box wow fadeInLeft">
+					<h2>Book Our Courses Now</h2>
 					<form class="register-info">
-						<input type="text" id="full-name" class="form-control" />
-						<input type="email" id="email-id" class="form-control" />
-						<input type="text" id="phone-number" class="form-control" />
-						<input type="text" id="course-selected" value="Hip-Hop" class="form-control"/>
+						<input type="text" id="full-name" placeholder="Name" class="form-control" />
+						<input type="email" id="email-id" placeholder="Email" class="form-control" />
+						<input type="text" id="phone-number" placeholder="Phone number" class="form-control" />
+						<select type="text" id="course-selected" value="Hip-Hop" class="form-control">
+							<option>Belly</option>
+							<option>Hip-Hop</option>
+							<option>Contemporary</option>
+						</select>
 						<button type="submit" class="btn btn-primary">Send</button>
 					</form>
 			</div>
