@@ -23,6 +23,15 @@ jQuery(document).ready(function() {
 		e.preventDefault();
 		scroll_to($(this), $('.top-content').outerHeight());
 	});
+	/*
+		Scroll to the form and select the course by default
+	*/
+	$('a.scroll-link-and-select').on('click', function(e) {
+		console.log('scroll to and select',this);
+		e.preventDefault();
+		$('#course-selected').first().val(this.id);
+		scroll_to($(this), $('.top-content').outerHeight());
+	});
 	// toggle "navbar-no-bg" class
 	$('.top-content .text').waypoint(function() {
 		$('nav').toggleClass('navbar-no-bg');
