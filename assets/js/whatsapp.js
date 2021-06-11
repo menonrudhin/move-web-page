@@ -1,7 +1,7 @@
 function sendWhatsappMsg(message) {
     console.log('called sendWhatsappMsg')
-    const sid = 'AC9c8ddeeab8067bae8de729a30b0ce273';
-    const key = '8d905f02bdacc84ca5428dc7176bd756';
+    const sid = process.env.sid;
+    const key = process.env.key;
     const from_number = 'From=whatsapp:+14155238886';
     const to_number = 'To=whatsapp:+14372464771';
     //let message = 'Body=Hi from Move';
@@ -27,7 +27,7 @@ function sendWhatsappMsg(message) {
     let formData = new FormData();
     //formData.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     formData.append('To','whatsapp:+14372464771');
-    formData.append('From','whatsapp:+14155238886');        
+    formData.append('From','whatsapp:+14155238886');
     formData.append('Body', message);
 
     xhr.send(formData);
