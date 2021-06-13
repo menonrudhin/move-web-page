@@ -1,7 +1,7 @@
 const http = require('http');
-
+console.log('getting started');
 const server = http.createServer((req, res) => {
-      console.log(process.env.sid);
+      console.log('sid is  = ' , process.env.sid);
       
       let body='';
       if (req.method === 'POST') {
