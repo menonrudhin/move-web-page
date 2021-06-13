@@ -13,9 +13,9 @@ const server = http.createServer((req, res) => {
           console.log(body);
           res.end('ok');
         });
-    } else {
+    } /*else {
       console.log('request not identified !');
-    }
+    }*/
     else {
       res.render('index.html');
     }
