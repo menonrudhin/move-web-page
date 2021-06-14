@@ -3,7 +3,7 @@ console.log('getting started');
 const PORT=5000;
 const server = http.createServer((req, res) => {
       console.log('sid is  = ' , process.env.sid);
-      
+
       let body='';
       if (req.method === 'POST') {
         req.on('data', chunk => {
@@ -29,4 +29,4 @@ const server = http.createServer((req, res) => {
 	  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
     }*/
 });
-server.listen(PORT);
+server.listen(process.env.PORT || PORT);
