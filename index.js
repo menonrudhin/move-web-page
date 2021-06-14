@@ -1,6 +1,14 @@
 const http = require('http');
 console.log('getting started');
 const PORT=5000;
+
+var express = require('express');
+var cors = require('cors');
+var app = express();
+app.use(cors({
+  origin: 'https://menonrudhin.github.io'
+}));
+
 const server = http.createServer((req, res) => {
       console.log('sid is  = ' , process.env.sid);
 

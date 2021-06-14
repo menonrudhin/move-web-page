@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-	"start"  : "node index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
     "url": "https://github.com/menonrudhin/move-web-page/issues"
   },
   "homepage": "https://github.com/menonrudhin/move-web-page#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
 }
