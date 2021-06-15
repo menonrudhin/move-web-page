@@ -13,9 +13,11 @@ app.use(function(req, res, next) {
   console.log('enable cors');
 });
 
+app.use(express.static("public"));
+
 app.get('/', function(req, res, next) {
   // Handle the get for this route
-  res.render('index.html');
+  res.render('public/index.html');
 });
 
 app.get('/ver', function(req, res, next) {
