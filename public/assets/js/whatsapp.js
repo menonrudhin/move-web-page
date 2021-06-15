@@ -5,7 +5,7 @@ function sendWhatsappMsg(message) {
     //let message = 'Body=Hi from Move';
 
     //let url = 'https://git.heroku.com/move-web-page.git';
-    let url = 'hhttps://move-web-page.herokuapp.com/ver';
+    let url = 'https://move-web-page.herokuapp.com/ver';
 
     let xhr = new XMLHttpRequest();
     //xhr.open("POST", url, true);
