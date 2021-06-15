@@ -36,7 +36,7 @@ app.get('/ver', function(req, res, next) {
 app.post('/', jsonParser, function(req, res, next) {
  // Handle the post for this route
  console.log('post request : ',req.body);
- let message = 'Your ' + req.phone + ' order of ' + req.course + ' has shipped and should be delivered on ' + req.email + '. Details : ' + req.name;
+ let message = 'Your ' + req.body.phone + ' order of ' + req.body.course + ' has shipped and should be delivered on ' + req.body.email + '. Details : ' + req.body.name;
  client.messages
        .create({
           body: message,
