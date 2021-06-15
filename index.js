@@ -29,6 +29,7 @@ app.get('/ver', function(req, res, next) {
 app.post('/', function(req, res, next) {
  // Handle the post for this route
  console.log('post request');
+ res.send('DONE OK');
 });
 
 app.listen(process.env.PORT || PORT);
