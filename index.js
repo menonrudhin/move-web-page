@@ -18,6 +18,11 @@ app.get('/', function(req, res, next) {
   res.render('index.html');
 });
 
+app.get('/ver', function(req, res, next) {
+  // Handle the get for this route
+  res.send('v0.1');
+});
+
 app.post('/', function(req, res, next) {
  // Handle the post for this route
  console.log('post request');
