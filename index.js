@@ -17,6 +17,7 @@ app.use(function(req, res, next) {
 app.use(express.static("public"));
 
 app.get('/', function(req, res, next) {
+  console.log(process.env.sid);
   // Handle the get for this route
   res.render('public/index.html');
 });
