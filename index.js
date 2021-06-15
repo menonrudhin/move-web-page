@@ -36,6 +36,7 @@ app.get('/ver', function(req, res, next) {
 app.post('/', jsonParser, function(req, res, next) {
  // Handle the post for this route
  console.log('post request : ',req.body);
+ let message = 'Your ' + req.phone + ' order of ' + req.course + ' has shipped and should be delivered on ' + req.email + '. Details : ' + req.name;
  client.messages
        .create({
           body: 'This is an automated whatsapp message, have a wonderful day ahead',
