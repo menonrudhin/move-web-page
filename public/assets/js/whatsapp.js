@@ -21,15 +21,8 @@ function sendWhatsappMsg(message) {
     }
 
     //let post_string = from_number + '&' + to_number + '&' + message;
-
-    let formData = new FormData();
-    //formData.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    formData.append('name', message);
-    formData.append('email', message);
-    formData.append('phone', message);
-    formData.append('course', message);
-
-    xhr.send(formData);
+    console.log('sent message : ',message);
+    xhr.send(message);
     //xhr.send();
 }
 
