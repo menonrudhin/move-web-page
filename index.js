@@ -29,3 +29,5 @@ app.post('/', function(req, res, next) {
 });
 
 app.listen(process.env.PORT || PORT);
+
+module.exports = app;
