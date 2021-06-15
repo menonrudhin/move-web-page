@@ -11,7 +11,7 @@ function sendWhatsappMsg(message) {
     //xhr.open("GET", url, true);
 
     //Send the proper header information along with the request
-    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     //xhr.setRequestHeader("Authorization", "Basic " + btoa(sid + ':' + key))
     xhr.onreadystatechange = function () { // Call a function when the state changes.
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {

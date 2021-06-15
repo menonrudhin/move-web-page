@@ -9,6 +9,8 @@ const PORT=5000;
 var express = require('express');
 var cors = require('cors');
 var app = express();
+var bodyParser = require('body-parser');
+var jsonParser = bodyParser.json();
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
@@ -31,7 +33,7 @@ app.get('/ver', function(req, res, next) {
   res.send('v0.1');
 });
 
-app.post('/', function(req, res, next) {
+app.post('/', jsonParser, function(req, res, next) {
  // Handle the post for this route
  console.log('post request : ',req.body);
  client.messages
