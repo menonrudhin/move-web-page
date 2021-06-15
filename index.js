@@ -1,3 +1,7 @@
+const accountSid = process.env.sid;
+const authToken = process.env.key;
+const client = require('twilio')(accountSid, authToken);
+
 //const http = require('http');
 console.log('getting started');
 const PORT=5000;
@@ -30,6 +34,14 @@ app.get('/ver', function(req, res, next) {
 app.post('/', function(req, res, next) {
  // Handle the post for this route
  console.log('post request');
+ client.messages
+       .create({
+          body: 'This is an automated whatsapp message, have a wonderful day ahead',
+          from: 'whatsapp:+14155238886',
+          to: 'whatsapp:+14372464771'
+        })
+       .then(message => console.log('Response from twilio : ',message))
+       .done();
  res.send('DONE OK');
 });
 
