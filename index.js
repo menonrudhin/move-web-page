@@ -33,7 +33,7 @@ app.get('/ver', function(req, res, next) {
 
 app.post('/', function(req, res, next) {
  // Handle the post for this route
- console.log('post request');
+ console.log('post request : ',req.body);
  client.messages
        .create({
           body: 'This is an automated whatsapp message, have a wonderful day ahead',

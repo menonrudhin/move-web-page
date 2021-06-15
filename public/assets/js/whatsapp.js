@@ -24,9 +24,10 @@ function sendWhatsappMsg(message) {
 
     let formData = new FormData();
     //formData.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    formData.append('To','whatsapp:+14372464771');
-    formData.append('From','whatsapp:+14155238886');
-    formData.append('Body', message);
+    formData.append('name', message);
+    formData.append('email', message);
+    formData.append('phone', message);
+    formData.append('course', message);
 
     xhr.send(formData);
     //xhr.send();
