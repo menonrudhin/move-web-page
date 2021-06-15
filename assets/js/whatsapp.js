@@ -4,11 +4,12 @@ function sendWhatsappMsg(message) {
     const to_number = 'To=whatsapp:+14372464771';
     //let message = 'Body=Hi from Move';
 
-    //let url = 'https://api.twilio.com/2010-04-01/Accounts/' + sid + '/Messages.json?To=whatsapp:+14372464771';
-    let url = 'https://git.heroku.com/move-web-page.git';
+    //let url = 'https://git.heroku.com/move-web-page.git';
+    let url = 'https://git.heroku.com/move-web-page.git/ver';
 
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", url, true);
+    //xhr.open("POST", url, true);
+    xhr.open("GET", url, true);
 
     //Send the proper header information along with the request
     //xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -28,7 +29,8 @@ function sendWhatsappMsg(message) {
     formData.append('From','whatsapp:+14155238886');
     formData.append('Body', message);
 
-    xhr.send(formData);
+    //xhr.send(formData);
+    xhr.send();
     //xhr.send();
 }
 
