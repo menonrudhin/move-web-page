@@ -1,7 +1,5 @@
 function sendWhatsappMsg(message) {
-    console.log('called sendWhatsappMsg')
-    const from_number = 'From=whatsapp:+14155238886';
-    const to_number = 'To=whatsapp:+14372464771';
+    console.log('called sendWhatsappMsg');
 
     //let url = 'https://move-web-page.herokuapp.com/ver';
     let url = 'https://move-web-page.herokuapp.com';
