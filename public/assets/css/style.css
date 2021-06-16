@@ -3,7 +3,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    color: #888;
+    color: #f8f9fa;
     line-height: 30px;
     text-align: center;
 }
@@ -17,7 +17,7 @@ h1, h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 38px;
     font-weight: 300;
-    color: #555;
+    color: #f8f9fa;
     line-height: 50px;
 }
 
@@ -25,7 +25,7 @@ h3 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 22px;
     font-weight: 300;
-    color: #555;
+    color: #f8f9fa;
     line-height: 30px;
 }
 
@@ -50,13 +50,13 @@ img { max-width: 100%; }
 }
 
 .section-container-gray-bg {
-	background: #f8f8f8;
+	background: #6c757d;
 }
 
 .section-container-image-bg,
 .section-container-image-bg h2,
 .section-container-image-bg h3 {
-	color: #fff;
+	color: #000;
 }
 
 .section-container-image-bg .divider-1 span {
@@ -275,6 +275,10 @@ img { max-width: 100%; }
 
 
 /***** More services *****/
+.more-services-container {
+  margin-top : 10%;
+  background : #343a40;
+}
 
 .more-services-box {
 	margin-top: 30px;
@@ -336,7 +340,7 @@ img { max-width: 100%; }
 .portfolio-box h3 {
 	margin-top: 30px;
 }
-.portfolio-box h3 a { color: #555; }
+.portfolio-box h3 a { color: #ced4da; }
 .portfolio-box h3 a:hover, .portfolio-box h3 a:focus { color: #9b59b6; }
 
 .portfolio-box h3 i {
@@ -436,7 +440,9 @@ img { max-width: 100%; }
 
 
 /***** Blog *****/
-
+.blog-container {
+  background : #343a40;
+}
 .blog-box {
 	margin-top: 30px;
 	text-align: left;
@@ -459,7 +465,7 @@ img { max-width: 100%; }
 .blog-box h3 {
 	margin-top: 0;
 }
-.blog-box h3 a { color: #555; }
+.blog-box h3 a { color: #adb5bd; }
 .blog-box h3 a:hover, .blog-box h3 a:focus { color: #9b59b6; }
 
 .blog-box h3 i {
