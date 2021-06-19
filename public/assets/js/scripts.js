@@ -71,6 +71,7 @@ jQuery(document).ready(function() {
 		console.log(fullName,' , ',emailId,' , ',phoneNo,' , ',course);
 		let message = { 'phone' : phoneNo , 'course' : course , 'email' : emailId , 'name' : fullName };
 		sendWhatsappMsg(message);
+		//test();
 	});
 
 });

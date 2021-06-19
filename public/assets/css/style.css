@@ -527,3 +527,23 @@ footer {
 }
 
 .footer-bottom a:hover, .footer-bottom a:focus { color: #888; }
+
+.alert-dialog {
+  width : 70%;
+  height : 30%;
+  background : gray;
+  position : fixed;
+  margin : 15% 15% 15% 15%;
+  z-index: 1;
+  display : none; /* hidden initially */
+}
+
+.alert-dialog-content {
+  color : white;
+  margin : 5%;
+}
+
+.alert-dialog-close-button {
+  color : black;
+  margin : 1% 0 0 95%;
+}

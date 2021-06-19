@@ -15,6 +15,7 @@ function sendWhatsappMsg(message) {
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
             // Request finished. Do processing here.
             console.log('SENT OK');
+            $('alert-dialog').show(); // alert box to inform the user that the message is sent
         }
     }
 
@@ -22,6 +23,10 @@ function sendWhatsappMsg(message) {
     console.log('sent message : ',message);
     xhr.send(JSON.stringify(message));
     //xhr.send();
+}
+
+function test(){
+  $('.alert-dialog').show(1000);
 }
 
 //sendWhatsappMsg();
