@@ -74,6 +74,10 @@ jQuery(document).ready(function() {
 		//test();
 	});
 
+	$(".alert-dialog-close-button").on('click' , function() {
+		$('.alert-dialog').fadeOut(100);
+	});
+
 });
 
 

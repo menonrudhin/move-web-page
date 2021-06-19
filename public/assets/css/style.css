@@ -536,6 +536,8 @@ footer {
   margin : 15% 15% 15% 15%;
   z-index: 1;
   display : none; /* hidden initially */
+  border-radius : 25px;
+  font-size: 22px;
 }
 
 .alert-dialog-content {
