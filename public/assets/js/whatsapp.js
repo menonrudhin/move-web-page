@@ -16,14 +16,17 @@ function sendWhatsappMsg(message) {
             // Request finished. Do processing here.
             console.log('SENT OK');
             showDialog('Your Request Has Been Sent');
+            $('.request-status-text').html('Your request was successful');
         } else {
             showDialog('Sorry ! We Are Unable To Accept Your Request Right Now');
+            $('.request-status-text').html('');
         }
     }
 
     //let post_string = from_number + '&' + to_number + '&' + message;
     console.log('sent message : ',message);
     xhr.send(JSON.stringify(message));
+    $('.request-status-text').html('Your request is being sent ...');
     //xhr.send();
 }
 
